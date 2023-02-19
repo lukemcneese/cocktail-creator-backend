@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://our.company.com/inventoryNew.schema.json",
+    "type": "object",
+    "properties": {
+      "ingredient": {
+        "type": "string",
+        "minimum": 0
+      },
+      "quantity": {
+        "type": "integer",
+        "minimum": -1
+      },
+      "username": {
+        "type": "string",
+        "minimum": 0
+      }
+    },
+    "additionalProperties": false,
+    "required": [
+      "ingredient",
+      "quantity",
+      "username"
+    ]
+  }
+  
