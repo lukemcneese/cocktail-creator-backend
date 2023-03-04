@@ -18,7 +18,8 @@ if (process.env.NODE_ENV === "production") {
     connectionString: getDatabaseUri()
   });
 }
-
+console.log(process.env.NODE_ENV);
+console.log(getDatabaseUri());
 db.connect();
 
 
